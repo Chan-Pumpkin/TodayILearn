@@ -27,5 +27,5 @@ JAVA, C#, .NET 등등
 <img src="https://user-images.githubusercontent.com/62877858/134814885-5ba9a323-0c4a-4764-aa78-7fc6ed5f33eb.GIF"/>
 
 참고 :   
-https://shlee0882.tistory.com/205   
-https://velog.io/@changyeonyoo/Mybatis%EB%9E%80-%EC%9E%A5%EC%A0%90-%ED%8A%B9%EC%A7%95-%EC%BB%B4%ED%8F%AC%EB%84%8C%ED%8A%B8   
+- https://shlee0882.tistory.com/205   
+- https://velog.io/@changyeonyoo/Mybatis%EB%9E%80-%EC%9E%A5%EC%A0%90-%ED%8A%B9%EC%A7%95-%EC%BB%B4%ED%8F%AC%EB%84%8C%ED%8A%B8   
