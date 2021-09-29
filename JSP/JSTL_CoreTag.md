@@ -13,22 +13,33 @@ jsp에서는 변수 선언, 조건식, 반복문 기능은 자바 코드를 이�
 
 #1 변수 지원 
 - <c:set>   
-JSP 페이지에서 변수를 지정한다.
+JSP 페이지에서 변수를 지정한다.      
+
+Tip!   
+scope : 속성을 공유할 수 있는 유효범위      
+scope 종류 : Session, Request, Application, Page      
 
 ```jsx
 <c:set var="변수 이름" value="변수값" [scope="scope 속성 중 하나"]
 ```
 
-Tip!   
-scope : 속성을 공유할 수 있는 유효범위   
-scope 종류 : Session, Request, Application, Page   
-
 - <c:remove>   
-지정된 변수를 제거한다.
+JSP 페이지에서 변수를 선언했으면, <c:remove>태그를 이용해서 변수를 제거할 수도 있다.  
+
+Tip!   
+var : 제거할 변수 이름   
+scope : 변수 범위 지정   
+```jsx
+<c:remove var="변수이름" [scope="scope 속성 중 하나"] />
+```
 
 #2 흐름 제어
 - <c:if>   
-조건문을 사용한다.   
+JSP 페이지에서 조건문을 대체해 사용하는 태그      
+```jsx
+<c:if test="${조건식}" var="변수이름" [scope="scope 속성 중 하나"]/>
+</c:if>
+```
 
 - <c:choose>    
 switch문을 사용한다.
