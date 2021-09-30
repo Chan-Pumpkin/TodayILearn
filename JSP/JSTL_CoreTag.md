@@ -42,8 +42,20 @@ JSP 페이지에서 조건문을 대체해 사용하는 태그
 ```
 
 - <c:choose>    
-switch문을 사용한다.
+JSP 페이지에서 switch문의 기능을 수행한다.
+```jsx
+<c:choose>
+	<c:when test="조건식1"> 내용1 </c:when>
+	<c:when test="조건식2"> 내용2 </c:when>
+	..
+	<c:otherwise> 내용N </c:otherwise>
+</c:choose>
+```
 
+첫 번째 <c:when> 태그의 조건식1을 체크해서 참이면 '내용1'을 수행한다.   
+조건식 1이 거짓이면, 다음 조건식2를 체크해서 참이면 '내용2'를 수행한다.   
+모든 조건식이 거짓이면 '내용N'을 수행한다   
+   
 - <c:forEach>     
 반복문을 사용한다    
      
