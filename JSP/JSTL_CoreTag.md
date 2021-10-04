@@ -2,28 +2,30 @@
 
 jsp에서는 변수 선언, 조건식, 반복문 기능은 자바 코드를 이용해서 구현하지만, 코어 라이브러리를 사용하면 이런 자바 기능을 태그로 대체할 수 있다.   
 
-### taglib
+## taglib
+
 자바의 import문처럼 Core Tag 라이브러리를 사용하기 위해 반드시 JSP 페이지 상단에 다음과 같이 taglib 디렉티브 태그를 추가해서 톰캣에게 알려주어야 한다. 만약 선언을 하지 않으면 오류가 발생한다.
 
 ```jsx
 <%@ taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core" %>
 ```
 
-### Core 태그 라이브러리 기능별 종류 정리
+## Core 태그 라이브러리 기능별 종류 정리
 
-#1 변수 지원 
-- <c:set>   
+#1 변수 지원    
+1-1) <c:set>   
 JSP 페이지에서 변수를 지정한다.      
-
-Tip!   
-scope : 속성을 공유할 수 있는 유효범위      
-scope 종류 : Session, Request, Application, Page      
 
 ```jsx
 <c:set var="변수 이름" value="변수값" [scope="scope 속성 중 하나"]
 ```
+   
+   Tip!   
+scope : 속성을 공유할 수 있는 유효범위      
+scope 종류 : Session, Request, Application, Page      
 
-- <c:remove>   
+
+1-2) <c:remove>   
 JSP 페이지에서 변수를 선언했으면, <c:remove>태그를 이용해서 변수를 제거할 수도 있다.  
 
 Tip!   
@@ -33,15 +35,15 @@ scope : 변수 범위 지정
 <c:remove var="변수이름" [scope="scope 속성 중 하나"] />
 ```
 
-#2 흐름 제어
-- <c:if>   
+#2 흐름 제어      
+2-1) <c:if>      
 JSP 페이지에서 조건문을 대체해 사용하는 태그      
 ```jsx
 <c:if test="${조건식}" var="변수이름" [scope="scope 속성 중 하나"]/>
 </c:if>
 ```
 
-- <c:choose>    
+2-2) <c:choose>    
 JSP 페이지에서 switch문의 기능을 수행한다.
 ```jsx
 <c:choose>
@@ -56,26 +58,50 @@ JSP 페이지에서 switch문의 기능을 수행한다.
 조건식 1이 거짓이면, 다음 조건식2를 체크해서 참이면 '내용2'를 수행한다.   
 모든 조건식이 거짓이면 '내용N'을 수행한다   
    
-- <c:forEach>     
-반복문을 사용한다    
+2-3) <c:forEach>     
+JSP 페이지에서 반복문을 수행하는 태그
+
+```jsx
+<c:forEach var="변수이름" item="반복할객체이름" begin="시작값" end="마지막값"
+						step="증가값" varStatus="반복상태변수이름">
+...
+</c:forEach>
+```
+Tip!   
+var : 반복할 변수 이름   
+items : 반복할 객체 이름 지정   
+begin : 반복 시작 값   
+end : 종료 값   
+step : 한 번 반복할 때마다 반복 변수를 증가시킬 값   
+varStatus : 반복 상태 속성 지정   
+    
+Tip! : varStatus 속성정리          
+|속성|태그|설명|
+|---|---|---|
+|index|int|items에서 정의한 항목을 가리키는 index 번호로서, 0부터 시작|
+|count|int|몇 번째 반복인지 나타냄. 1부터 시작|
+|first|boolean|첫 번째 반복인지 나타냄|
+|last|boolean|마지막 반복인지 나타냄|
+
+
      
-- <c:forTokens>      
+2-4) <c:forTokens>      
 구분자로 분리된 각각의 토큰을 처리할 때 사용한다.     
     
     
 #3 URL 처리     
-- <c:import>     
+3-1) <c:import>     
 URL을 이용해 다른 자원을 JSP 페이지에 추가한다.      
 
-- <c:redirect>     
+3-2) <c:redirect>     
 respones.sendRedirect() 기능을 수행한다.     
 
-- <c:url>    
+3-3) <c:url>    
 요청 매개변수로부터 URL을 생성한다.    
 
-#4 기타 태그
-- <c:catch>    
+#4 기타 태그   
+4-1) <c:catch>    
 예외 처리에 사용한다.    
 
-- <c:out>     
+4-2) <c:out>     
 JspWriter에 내용을 처리한 후 출력한다.     
