@@ -93,8 +93,10 @@ Tip! : varStatus 속성정리
 URL을 이용해 다른 자원을 JSP 페이지에 추가한다.      
 
 - 3-2) <c:redirect>     
-respones.sendRedirect() 기능을 수행한다.     
-
+respones.sendRedirect()을 대체하는 태그로 지정한 다른 페이지로 이동     
+```jsx
+ <c:redirect url="redirect할 URL" />
+```
 - 3-3) <c:url>  
 <c:url> 태그는 JSP 페이지에서 URL 정보를 저장하는 역할   
 ```jsx
