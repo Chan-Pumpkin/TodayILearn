@@ -91,7 +91,10 @@ Tip! : varStatus 속성정리
 #3 URL 처리     
 - 3-1) <c:import>     
 URL을 이용해 다른 자원을 JSP 페이지에 추가한다.      
-
+```jsx
+<c:import url="URL" [var="변수 이름"] [scope="영역"] [charEncoding="인코딩"]>
+</c:import>
+```   
 - 3-2) <c:redirect>     
 respones.sendRedirect()을 대체하는 태그로 지정한 다른 페이지로 이동     
 ```jsx
