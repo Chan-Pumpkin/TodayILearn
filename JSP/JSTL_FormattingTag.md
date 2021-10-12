@@ -38,3 +38,18 @@ var : <formatNumber> 태그 결과를 저장할 변수의 이름을 저장
 scope : 변수의 접근 범위 지정       
       
 pattern : 숫자가 출력될 양식 지정. 자바의 DecimalFormat 클래스에 정의된 형식을 따름.     
+     
+## FormatDate 태그 속성     
+value : 포맷될 날짜를 지정    
+    
+type : 포매팅할 타입을 지정          
+    
+dateStyle : 날짜의 출력 형식 지정      
+     
+timeStyle : 시간 출력 형식을 지정     
+     
+pattern : 직접 출력 형식을 지정     
+     
+timeZone : 특정 나라 시간대로 시간을 지정      
+       
+    
