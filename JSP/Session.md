@@ -22,4 +22,9 @@
 
 ## 세션 API의 특징과 기능
 서블릿에서 세션을 이용하려면 HttpSession 클래스 객체를 생성해서 사용해야함.    
-HttpSession 객체는 HttpServletRequest의 getSession() 메서드를 호출해서 생성함.     
+HttpSession 객체는 HttpServletRequest의 getSession() 메서드를 호출해서 생성함.    
+    
+## getSession() 메서드      
+getSession() : 기존의 세션 객체가 존재하면 반환하고, 없으면 새로 생성      
+getSession(true) : 기존의 세션 객체가 존재하면 반환하고, 없으면 새로 생성
+getSession(false) : 기존의 세션 객체가 존재하면 반환하고, 없으면 null을 반환    
