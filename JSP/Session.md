@@ -30,8 +30,8 @@ getSession(true) : 기존의 세션 객체가 존재하면 반환하고, 없으�
 getSession(false) : 기존의 세션 객체가 존재하면 반환하고, 없으면 null을 반환      
     
 ## HttpSession 클래스의 메서드
-|반환타입|메서드|설명|
+|반환 타입|메서드|설명|
 |---|---|---|
-|Object|getAttribute(String name)|속성 이름이 name인 속성 값을 Object타입으로 반환. 해당되는 속성 이름이 없을 경우 null 값을 반환|
+|Object|getAttribute(String name)|<pre>속성 이름이 name인 속성 값을 Object타입으로 반환. 해당되는 속성 이름이 없을 경우 null 값을 반환|
 |String|getId()|세션에 할당된 고유 식별자를 String 타입으로 반환|
 |int|getMaxInactiveInterval()|현재 생성된 세션을 유지하기 위해 설정된 세션 유지 시간을 int 타입을 반환|
