@@ -40,6 +40,14 @@ Session 쿠키는 브라우저가 사용하는 메모리에 생성되는 쿠키.
 ## 쿠키 클래스 여러 가지 메서드
 |메서드|설명|
 |---|---|
-|getComment()|쿠키에 대한 설명을 가져옵니다.|
-|getDomain()|쿠키의 유효한 도메인 정보를 가져옵니다.|
-|getMaxAge()|쿠키 유효 기간을 가져옵니다.|
+|getComment()|쿠키에 대한 설명을 가져온다.|
+|getDomain()|쿠키의 유효한 도메인 정보를 가져온다.|
+|getMaxAge()|쿠키 유효 기간을 가져온다.|
+|getName()|쿠키 이름을 가져온다.|
+|getPath|쿠키의 디렉터리 정보를 가져온다.|
+|getValue|쿠키의 설정 값을 가져온다.|
+|setComment(String)|쿠키에 대한 설명을 설정|
+|setDomain(String)|쿠키의 유효한 도메인 설정|
+|setValue(String)|쿠키 값을 설정|
+|setMaxAge(int)|쿠키 유효 기간을 설정|
+|setPath|쿠키의 디렉터리 정보를 설정|
