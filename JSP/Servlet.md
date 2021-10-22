@@ -18,4 +18,7 @@
 - 컨테이너 종류에 상관없이 실행(플랫폼 독립적)
 - 보안 기능 적용하기 쉽다.
 - 웹 브라우저에서 요청 시 기능을 수행.
-
+     
+## 서블릿 API 계층 구조
+서블릿 API는 Servlet과 ServletConfig 인터페이스를 구현해 제공하며 GenericServlet 추상 클래스가 이 두 인터페이스의 추상 메서드를 구현함.
+이 GenericServlet을 다시 HttpServlet이 상속 받음.
