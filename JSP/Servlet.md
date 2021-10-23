@@ -20,8 +20,11 @@
 - 웹 브라우저에서 요청 시 기능을 수행.
      
 ## 서블릿 API 계층 구조
-서블릿 API는 Servlet과 ServletConfig 인터페이스를 구현해 제공하며 GenericServlet 추상 클래스가 이 두 인터페이스의 추상 메서드를 구현함.
-이 GenericServlet을 다시 HttpServlet이 상속 받음.
+<img src="https://user-images.githubusercontent.com/62877858/138565720-92127eae-ff30-4cfb-8b74-6ae0eefb5c9b.GIF"/>
+
+- 서블릿 API는 Servlet과 ServletConfig 인터페이스를 구현해 제공함    
+- GenericServlet 추상 클래스가 이 두 인터페이스의 추상 메서드를 구현함    
+- GenericServlet을 다시 HttpServlet이 상속 받음        
    
 ## 서블릿 API 기능 특징
 Servlet 인터페이스     
