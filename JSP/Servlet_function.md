@@ -25,3 +25,4 @@ javax.servlet.http.HttpServletResponse 클래스 - 응답과 관련된 API
 |void|addCookie(Cookie cookie)|응답에 쿠키를 추가함.|
 |void|addHeader(String name, String value)|name과 value를 헤더에 추가함.|
 |String|encodeURL(String url)|클라이언트가 쿠키를 지원하지 않을 때 세션 id를 포함한 특정 URL을 인코딩 함.|
+|Collection <String>|getHeaderNames()|현재 응답의 헤더에 포함된 name을 얻어옴.|
