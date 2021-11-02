@@ -18,7 +18,7 @@ javax.servlet.http.HttpServletResponse 클래스 - 응답과 관련된 API
 |String|getContextPath()|요청한 컨텍스트를 가리키는 URI를 반환함.|
 |Cookie[]|getCookies()|클라이언트가 현재의 요청과 함께 보낸 쿠키 객체들에 대한 배열을 반환함.|
 |String|getHeader(String name)|특정 요청에 대한 헤더 정보를 문자열로 반환함.|
-|Enumeration<String>|getHeaderNames()|현재의 요청에 포함된 헤더의 name 속성을 enumeration으로 반환함.|
+|String|getMethod()|현재 요청이 GET, POST 또는 PUT 방식 중 어떤 HTTP 요청인지를 반환합니다.|
 
 ## HttpServletResponse의 여러 가지 메서드
 |반환형|메서드 이름|기능|
