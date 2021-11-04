@@ -20,7 +20,7 @@ javax.servlet.http.HttpServletResponse 클래스 - 응답과 관련된 API
 |String|getHeader(String name)|특정 요청에 대한 헤더 정보를 문자열로 반환함.|
 |String|getMethod()|현재 요청이 GET, POST 또는 PUT 방식 중 어떤 HTTP 요청인지를 반환합니다.|
 |String|getServletPath()|요청한 URL에서 서블릿이나 JSP 이름을 반환|
-
+|HttpSession|getSession()|현재의 요청과 연관된 세션을 반환함. 만약 세션이 없으면 새로 만들어서 반환함.|
 ## HttpServletResponse의 여러 가지 메서드
 |반환형|메서드 이름|기능|
 |---|---|-----|
