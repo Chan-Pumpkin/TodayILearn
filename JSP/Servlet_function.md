@@ -21,12 +21,14 @@ javax.servlet.http.HttpServletResponse 클래스 - 응답과 관련된 API
 |String|getMethod()|현재 요청이 GET, POST 또는 PUT 방식 중 어떤 HTTP 요청인지를 반환합니다.|
 |String|getServletPath()|요청한 URL에서 서블릿이나 JSP 이름을 반환|
 |HttpSession|getSession()|현재의 요청과 연관된 세션을 반환함. 만약 세션이 없으면 새로 만들어서 반환함.|
+|```Enumeration <String>```|getHeaderNames()|현재의 요청에 포함된 헤더의 name 속성을 enumeration으로 반환함.|
+
 ## HttpServletResponse의 여러 가지 메서드
 |반환형|메서드 이름|기능|
 |---|---|-----|
 |void|addCookie(Cookie cookie)|응답에 쿠키를 추가함.|
 |void|addHeader(String name, String value)|name과 value를 헤더에 추가함.|
 |String|encodeURL(String url)|클라이언트가 쿠키를 지원하지 않을 때 세션 id를 포함한 특정 URL을 인코딩 함.|
-|Collection <String>|getHeaderNames()|현재 응답의 헤더에 포함된 name을 얻어옴.|
+|```Collection <String>```|getHeaderNames()|현재 응답의 헤더에 포함된 name을 얻어옴.|
 |void|sendRedirect(String location)|클라이언트에게 리다이렉트(redirect)응답을 보낸 후 특정 URL로 다시 요청하게 함.|
 |String|getPathInfo()|클라이언트가 요청 시 보낸 URL과 관련된 추가 경로 정보를 반환|
