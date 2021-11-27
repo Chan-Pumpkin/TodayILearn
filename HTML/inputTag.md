@@ -40,3 +40,8 @@
 ```
 <input type=텍스트-입력-필드 authfocus required>
 ```
+
+- placeholder : 사용자가 input 입력란에 어떠한 항목을 입력해줘야 하는지 안내하는 용도로 사용.
+```
+<input type="text" id="phone" placeholder"핸드폰 번호 입력해주세요">
+```
