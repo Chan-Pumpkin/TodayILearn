@@ -45,3 +45,8 @@
 ```
 <input type="text" id="phone" placeholder"핸드폰 번호 입력해주세요">
 ```
+
+- readonly : 텍스트 필드, 영역에 내용을 입력할 수 만드는 속성으로 내용을 보기만 해야할 때 사용.
+```
+<input type="text" readonly>
+```
