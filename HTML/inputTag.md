@@ -50,3 +50,8 @@
 ```
 <input type="text" readonly>
 ```
+
+- required : 필수 입력 필드를 지정하는 속성으로서, 해당 입력 필드에 입력 안하고 버튼을 클릭 하면 오류 메시지를 보여줌.
+```
+<input type="text" id="name" required>
+```
