@@ -7,17 +7,17 @@
 ```   
     
 ## Formatting Tag library   
-1. <fmt:timeZone>   
+1. ```<fmt:timeZone>```   
 지정한 국가의 시간을 지정하는 태그     
 태그를 열고 닫는 영역 안에서만 적용된다.   
 
-2. <fmt:setTimeZone>    
+2. ```<fmt:setTimeZone>```    
 지정한 국가의 시간을 지정하는 태그  
     
-3. <fmt:formatNumber>    
+3. ```<fmt:formatNumber>```    
 표시할 숫자의 형식을 지정
 
-4. <fmt:formatDate>    
+4. ```<fmt:formatDate>```    
 지정한 형식의 날짜를 표시
     
 ## FormatNumber 태그 속성     
@@ -49,7 +49,14 @@ dateStyle : 날짜의 출력 형식 지정
 timeStyle : 시간 출력 형식을 지정     
      
 pattern : 직접 출력 형식을 지정     
-     
+- 예시    
+registerDate 파라미터에 년-월-일-시-분 의 값이 들어있는 경우, pattern 속성으로 년-월-일 형태로 지정할 수 있다.
+```
+<fmt:formatDate value="#{registerDate}" pattern="YYYY-MM-DD"/>
+```
+```
+실행 결과 : 2021-12-02
+```
+      
 timeZone : 특정 나라 시간대로 시간을 지정      
        
-    
