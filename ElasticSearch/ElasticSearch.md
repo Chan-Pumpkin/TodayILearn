@@ -23,18 +23,18 @@ RDBMS의 row과 같은 개념
 RDBMS의 Column과 비슷한 개념으로써, 엘라스틱서치 문서는 JSON인데, 각 JSON의 프로퍼티를 엘라스틱서치에서 필드라고 부른다.    
 
 ## ElasticSearch GET/PUT/POST/DELETE
-- GET
-RDBMS : SELECT
-CRUD : READ
+- GET      
+RDBMS : SELECT      
+CRUD : READ      
 - PUT
-RDBMS : UPDATE
-CRUD : UPDATE
+RDBMS : UPDATE       
+CRUD : UPDATE      
 - POST
-RDBMS : INSERT
-CRUD : CREATE
+RDBMS : INSERT     
+CRUD : CREATE      
 - DELETE
-RDBMS : DELETE
-CRUD : DELETE
+RDBMS : DELETE      
+CRUD : DELETE     
 
 
 
