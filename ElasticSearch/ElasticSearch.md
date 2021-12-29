@@ -26,13 +26,13 @@ RDBMS의 Column과 비슷한 개념으로써, 엘라스틱서치 문서는 JSON�
 - GET      
 RDBMS : SELECT      
 CRUD : READ      
-- PUT
+- PUT      
 RDBMS : UPDATE       
 CRUD : UPDATE      
-- POST
+- POST      
 RDBMS : INSERT     
 CRUD : CREATE      
-- DELETE
+- DELETE      
 RDBMS : DELETE      
 CRUD : DELETE     
 
