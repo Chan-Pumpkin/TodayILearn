@@ -1,4 +1,4 @@
-# INNERJOIN 
+# InnerJoin
 
 ### 1. INNERJOIN   
 INNERJOIN은 ON절과 함께 사용되며, ON절의 조건을 만족하는 데이터만을 가져온다.   
