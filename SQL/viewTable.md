@@ -11,3 +11,13 @@
 
 ## 제약?
 - 딘순 뷰인 경우 INSERT, UPDATE, DELETE 자유로움. 다만, GROUP BY, 함수 등 복합 뷰인 경우 불가능
+- 한번 정의된 뷰는 변경 
+
+## 뷰 생성 예제
+```
+-- VIEW 생성
+CREATE VIEW [view_name] AS 
+SELECT [field_name_1], [field_name_2] ... 
+FROM [table_name] 
+WHERE [조건];
+```
