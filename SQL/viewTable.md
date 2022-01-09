@@ -22,3 +22,9 @@ SELECT [field_name_1], [field_name_2] ...
 FROM [table_name] 
 WHERE [조건];
 ```
+
+## 뷰 조회 예제
+```
+-- VIEW 조회
+SELECT * FROM [view_name];
+```
