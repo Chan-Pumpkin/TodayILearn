@@ -16,3 +16,10 @@ HashMap<키 자료형, 값 자료형> map이름 = new HashMap<키 자료형, 값
 
 HashMap<String, String> mapA = new HashMap<String, String>(); // 예시
 ```
+
+- 값 추가
+```
+변수 이름.put(Key, Value);
+
+mapA.put("1", "Hi"); //예시
+```
