@@ -23,3 +23,8 @@ HashMap<String, String> mapA = new HashMap<String, String>(); // 예시
 
 mapA.put("1", "Hi"); //예시
 ```
+
+- 해당 키 삭제
+```
+Map이름.remove("키");
+```
