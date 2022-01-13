@@ -1,32 +1,28 @@
 # Map
 
-### Map 인터페이스   
-Map인터페이스는 Collection 인터페이스와는 다른 저장 방식을 가집니다.   
-키와 값을 하나의 쌍으로 저장하는 방식(Key-value방식)을 사용합니다.   
-Key는 Value를 찾기 위한 역할을 가집니다.   
-   
+## Map 인터페이스   
+키(key)와 값(value)을 하나의 쌍으로 묶어서 저장하는 컬렉션 클래스를 구현하는 데 사용함.   
       
-### Map 인터페이스 특징   
+## Map 인터페이스 특징   
 1. 요소의 저장 순서를 유지 하지 않습니다.      
 2. Key는 중복을 허용하지 않습니다.   
 3. Value는 중복을 허용합니다.   
+4. 중복된 키와 값을 저장하면 기존의 값은 없어지고 마지막에 저장된 값이 남게 된다.
    
-### Map 컬렉션 클래스 종류
-1. HashMap<K,V>   
-2. Hashtable<K,V>   
-3. TreeMap<K,V>   
+## Map 컬렉션 클래스 종류
+- Hashtable
+- HashMap
+- LinkedHashMap
+- SortedMap
+- TreeMap  
    
 ### HashMap<K,V> 클래스   
 HashMap클래스는 Map 컬렉션 클래스에서 가장 많이 사용되는 클래스 중 하나입니다.   
 해시 알고리즘을 사용하여 검색 속도가 매우 빠르다는 장점을 가지고 있습니다.   
-
-HashMap 클래스는 Map 인터페이스를 구현하므로, 중복된 키로는 값을 저장할 수 없습니다.   
-하지만 같은 값을 다른 키로 저장하는 것은 가능합니다.   
    
 ### Hashtable<K,V> 클래스   
 HashMap 클래스와 같은 동작을 하는 클래스 입니다.
 다만 동기화 보장이 필요로 하다고 하면 Hashtable을 사용을 합니다.
-
 
 ### TreeMap<K,V> 클래스   
 TreeMap 클래스는 키와 값을 한 쌍으로 하는 데이터를 이진 검색 트리(binary search tree)의 형태로 저장합니다.   
