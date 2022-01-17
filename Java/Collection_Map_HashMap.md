@@ -33,3 +33,8 @@ Map이름.remove("키");
 ```
 Map이름.clear();
 ```
+
+## 그 외의 메소드
+- boolean isEmpty()
+HashMap에 element가 있는지를 판단한다.   
+없으면 true, 있으면 false를 
