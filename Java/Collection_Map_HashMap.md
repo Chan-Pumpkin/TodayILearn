@@ -38,3 +38,6 @@ Map이름.clear();
 - boolean isEmpty()    
 HashMap에 element가 있는지를 판단한다.   
 없으면 true, 있으면 false를 반환한다.
+   
+- boolean containsValue(Object value)      
+인자로 주어진 Value를 가진 Key가 현재 HashMap에 존재하는지를 판단하여 boolean값을 반환한다
