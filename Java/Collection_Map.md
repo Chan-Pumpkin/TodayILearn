@@ -16,15 +16,15 @@
 - SortedMap
 - TreeMap  
    
-### HashMap<K,V> 클래스   
+## HashMap<K,V> 클래스   
 HashMap클래스는 Map 컬렉션 클래스에서 가장 많이 사용되는 클래스 중 하나입니다.   
 해시 알고리즘을 사용하여 검색 속도가 매우 빠르다는 장점을 가지고 있습니다.   
    
-### Hashtable<K,V> 클래스   
+## Hashtable<K,V> 클래스   
 HashMap 클래스와 같은 동작을 하는 클래스 입니다.
 다만 동기화 보장이 필요로 하다고 하면 Hashtable을 사용을 합니다.
 
-### TreeMap<K,V> 클래스   
+## TreeMap<K,V> 클래스   
 TreeMap 클래스는 키와 값을 한 쌍으로 하는 데이터를 이진 검색 트리(binary search tree)의 형태로 저장합니다.   
 이진 검색 트리는 데이터를 추가하거나 제거하는 등의 기본 동작 시간이 매우 빠릅니다.   
 JDK 1.2부터 제공된 TreeMap 클래스는 NavigableMap 인터페이스를 기존의 이진 검색 트리의 성능을 향상시킨 레드-블랙 트리(Red-Black tree)로 구현합니다.   
