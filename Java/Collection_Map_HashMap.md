@@ -44,3 +44,6 @@ HashMap에 element가 있는지를 판단한다.
 
 - size()
 HashMap에 저장된 엘리먼트의 개수를 반환한다.
+
+- clone()
+해당 Map의 엘리먼트를 복제한다.
