@@ -35,9 +35,12 @@ Map이름.clear();
 ```
 
 ## 그 외의 메소드
-- boolean isEmpty()    
+- isEmpty()    
 HashMap에 element가 있는지를 판단한다.   
 없으면 true, 있으면 false를 반환한다.
    
-- boolean containsValue(Object value)      
+- containsValue(Object value)      
 인자로 주어진 Value를 가진 Key가 현재 HashMap에 존재하는지를 판단하여 boolean값을 반환한다
+
+- size()
+HashMap에 저장된 엘리먼트의 개수를 반환한다.
