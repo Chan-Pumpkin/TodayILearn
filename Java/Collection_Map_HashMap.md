@@ -39,11 +39,14 @@ Map이름.clear();
 HashMap에 element가 있는지를 판단한다.   
 없으면 true, 있으면 false를 반환한다.
    
+- containsKey(Object Key)    
+Map의 엘리먼트 중 Key를 포함하고 있는지 여부를 확인한다.
+
 - containsValue(Object value)      
 인자로 주어진 Value를 가진 Key가 현재 HashMap에 존재하는지를 판단하여 boolean값을 반환한다
 
-- size()
+- size()     
 HashMap에 저장된 엘리먼트의 개수를 반환한다.
 
-- clone()
+- clone()    
 해당 Map의 엘리먼트를 복제한다.
