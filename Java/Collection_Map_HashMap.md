@@ -53,3 +53,6 @@ HashMap에 저장된 엘리먼트의 개수를 반환한다.
 
 - get(Object Key)      
 get은 Key값에 대한 엘리먼트를 가져온다.
+
+- putAll()    
+Map에 해당하는 모든 요소를 HashMap에 저장한다.
