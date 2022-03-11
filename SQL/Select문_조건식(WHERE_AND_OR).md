@@ -52,10 +52,15 @@ SELECT * FROM sampleTable WHERE address IS NULL;
 ## AND
 AND절에 포함한 모든 조건이 충족이 되어야 참.
 ```sql
-조건식 1 AND 조건식 2
+WHERE 조건식 1 AND 조건식 2
 ```
 ## OR
 OR절 포함한 모든 조건 중 하나라도 충족이 되면 참
 ```sql
-조건식 1 OR 조건식 2
+WHERE 조건식 1 OR 조건식 2
+```
+
+## IN
+```sql
+WHERE 컬럼 IN ('값1','값2')
 ```
