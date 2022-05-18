@@ -64,7 +64,6 @@ int testnum = (int) test
 
 ![기본형3](https://user-images.githubusercontent.com/62877858/169051952-53490ef9-7eb9-474f-b3aa-46c592d91cba.png)
 
-
 ## 5) 인코딩과 디코딩
 
 - 인코딩 : ‘A’ → 65
