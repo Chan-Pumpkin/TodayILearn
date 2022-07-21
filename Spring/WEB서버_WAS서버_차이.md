@@ -32,5 +32,6 @@ HTML, CSS, javascript, 이미지
 - 여러개의 서버 운영이 가능함.
 
 ## 참고
-https://gmlwjd9405.github.io/2018/10/27/webserver-vs-was.html
-https://codechasseur.tistory.com/25
+https://gmlwjd9405.github.io/2018/10/27/webserver-vs-was.html      
+https://codechasseur.tistory.com/25     
+https://gaebaldiary.tistory.com/27     
