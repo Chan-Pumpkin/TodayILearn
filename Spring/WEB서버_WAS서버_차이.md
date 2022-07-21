@@ -1,8 +1,8 @@
-# Web Server와 WAS(Web Application Server)Server 차이
+# WEB Server와 WAS(Web Application Server)Server 차이
 
-## Web Server
+## WEB Server
 
-### Web Server?
+### WEB Server?
 클라이언트가 웹 브라우저에서 어떠한 페이지 요청하면 웹 서버에서 그 요청을 받아 정적 컨텐츠를 제공하는 역할을 함.
 
 ### 정적 컨텐츠?
@@ -26,9 +26,10 @@ HTML, CSS, javascript, 이미지
 - 여러 개의 트랜잭션(논리적인 작업 단위) 관리 기능
 - 업무를 처리하는 비즈니스 로직 수행
 
-## WAS만 써도 되지 않을까?
+## WAS만 안쓰고, WEB서버와 WAS를 굳이 왜 따로 쓸까?
 - 기능을 분리하여 서버 부하 방지
 - 물리적으로 분리하여 보안 강화
+- 여러개의 서버 운영이 가능함.
 
 ## 참고
 https://gmlwjd9405.github.io/2018/10/27/webserver-vs-was.html
