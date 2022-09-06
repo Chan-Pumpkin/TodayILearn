@@ -73,6 +73,33 @@ catch (IOException|SQLException ex) {
 - 예외가 발생한 경우 try→catch→finally 순으로 실행됨.
 - 예외가 발생하지 않은 경우 try→finally의 순으로 실행됨.
 
+## **Try-With-Resources**
+
+- try-with-resources 문은 하나 이상의 리소스를 선언하는 try 문입니다.
+- 리소스는 프로그램이 완료된 후 닫아야 하는 개체입니다.
+- try-with resources 문을 사용하면 각 리소스가 문의 끝에 닫힙니다.
+
+다음 예제에서는 파일에서 첫 번째 줄을 읽습니다.
+
+파일 판독기 및 버퍼 판독기 인스턴스를 사용하여 파일에서 데이터를 읽습니다.
+
+### 예시)
+
+- FileReader와 BufferedReader를 파일로부터 데이터를 읽는데 사용하는 예시
+- FileReader 및 BufferedReader는 프로그램이 완료된 후 닫아야 하는 리소스입니다.
+- FileReader 와 BufferedReader는 Java SE 7이상에서, `java.lang.AutoCloseable` 구현한다.
+
+FileReader 및 BufferedReader 인스턴스는 try-with-resource 문에서 선언되므로 try 문이 정상적 또는 급작스럽게 완료되는지 여부 관계없이 닫힌다.
+
+```java
+static String readFirstLineFromFile(String path) throws IOException {
+	    try (FileReader fr = new FileReader(path);
+	         BufferedReader br = new BufferedReader(fr)) {
+	        return br.readLine();
+	    }
+	}
+```
+
 ## 참고
 - 오라클 공식문서 [https://docs.oracle.com/javase/tutorial/essential/exceptions/index.html](https://docs.oracle.com/javase/tutorial/essential/exceptions/index.html)
 - 자바의 정석 3rd Edition
