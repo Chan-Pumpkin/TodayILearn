@@ -64,6 +64,18 @@ catch (IOException|SQLException ex) {
 }
 ```
 
+## 멀티 catch 블럭 주의사항
+
+멀티 catch블럭 `|` 을 예외 클래스가 조상과 자손의 관계가 있는 예외를 연결하면 컴파일 예러가 발생함. 두 예외 클래스가 조상과 자손의 관계라면, 조상 클래스만 써주는 것이 맞다.
+
+```java
+try{
+	...
+} catch(ParentException | childException e) { //에러 발생
+	...
+}
+```
+
 ## finally 블럭
 
 > try 또는 catch 문이 실행되는 동안 JVM이 종료되면, finally문은 실행되지 않을 수 있다.
