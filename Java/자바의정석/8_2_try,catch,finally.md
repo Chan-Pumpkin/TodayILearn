@@ -75,16 +75,47 @@ try{
 	...
 }
 ```
-
 ## finally 블럭
 
-> try 또는 catch 문이 실행되는 동안 JVM이 종료되면, finally문은 실행되지 않을 수 있다.
-- oracle 공식문서-
+> try 또는 catch 문이 실행되는 동안 JVM이 종료되면, finally문은 실행되지 않을 수 있다.    
+출처 : oracle 공식문서
 > 
 - 항상 try문이 종료될 때 실행됨.
 - 예외가 발생한 경우 try→catch→finally 순으로 실행됨.
 - 예외가 발생하지 않은 경우 try→finally의 순으로 실행됨.
 
+### try->finally
+예외가 발생하지 않아서, catch를 지나지 않아서 바로 finally로 간다.
+```java
+public class testExceptionClass {
+    public static void main(String[] args) {
+        try {
+            System.out.println("Try");
+        } catch(Exception e) {
+            System.out.println("Catch");
+        } finally {
+            System.out.println("Finally");
+        }
+    }
+}
+```
+
+### try->catch->finally
+try문안에서 `throw new Exception();` 로 강제로 예외를 발생시켰기 때문에, catch문에 갔다가 finally로 간다.
+```java
+public class testExceptionClass {
+    public static void main(String[] args) {
+        try {
+            System.out.println("Try");
+            throw new Exception();
+        } catch(Exception e) {
+            System.out.println("Catch");
+        } finally {
+            System.out.println("Finally");
+        }
+    }
+}
+```
 
 ## 참고
 - 오라클 공식문서 [https://docs.oracle.com/javase/tutorial/essential/exceptions/index.html](https://docs.oracle.com/javase/tutorial/essential/exceptions/index.html)
