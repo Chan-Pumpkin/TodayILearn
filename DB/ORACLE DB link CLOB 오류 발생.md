@@ -3,7 +3,7 @@ CLOB 컬럼은 데이터베이스 링크로 테이블 컬럼 조회가 안되는
 
 ![DBLinkCLOBError](https://user-images.githubusercontent.com/62877858/193050282-309e7783-acb4-4157-8b9d-453717473853.png)
 
-상황 : Oracle에서 개발 DB에서 운영 DB의 테이블을 DB link 방식으로 연결해서 SELECT를 해야한다. 하지만, 위와 같은 오류가 발생.
+Oracle에서 개발 DB에서 운영 DB의 테이블을 DB link 방식으로 연결해서 SELECT를 해야한다. 하지만, 위와 같은 오류가 발생.
 
 ## LOB타입
 
