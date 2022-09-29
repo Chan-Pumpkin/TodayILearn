@@ -27,21 +27,25 @@ LOB 타입은 Large Object라는 의미로서, 대용량의 데이터를 저장�
 ## 해결 방법
 
 로컬에 원격지의 테이블을 만들어준다.
-
 ```sql
-create table temp_원격테이블asselect * from [원격테이블@DB](mailto:%EC%9B%90%EA%B2%A9%ED%85%8C%EC%9D%B4%EB%B8%94@DB)링크명where 1=2;
+create table temp_원격테이블
+as
+select * from 원격테이블@DB링크명
+where 1=2;
 ```
 
 원격지 테이블을 그대로 insert해온다.
 
 ```sql
-insert into temp_원격테이블select * from [원격테이블@DB](mailto:%EC%9B%90%EA%B2%A9%ED%85%8C%EC%9D%B4%EB%B8%94@DB)링크명
+insert into temp_원격테이블
+select * from 원격테이블@DB링크명
 ```
 
 이제 로컬 테이블에서 사용한다.
 
 ```sql
-select * from temp_원격테이블where rownum = 1;
+select * from temp_원격테이블
+where rownum = 1;
 ```
 
 ## 참조
