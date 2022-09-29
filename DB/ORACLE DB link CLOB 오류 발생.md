@@ -43,3 +43,11 @@ insert into temp_원격테이블select * from [원격테이블@DB](mailto:%EC%9
 ```sql
 select * from temp_원격테이블where rownum = 1;
 ```
+
+## 참조
+
+[https://blog.naver.com/nolbudr/150030600887](https://blog.naver.com/nolbudr/150030600887)
+
+[https://ooz.co.kr/280](https://ooz.co.kr/280)
+
+[http://www.gurubee.net/lecture/2768](http://www.gurubee.net/lecture/2768)
