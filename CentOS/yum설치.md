@@ -1,0 +1,6 @@
+# yum 설치
+
+### tcpdump 설치
+```
+yum install tcpdump
+```
