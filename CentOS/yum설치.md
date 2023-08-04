@@ -4,3 +4,9 @@
 ```
 yum install tcpdump
 ```
+
+### ip 관련 install
+    
+```
+yum install net-tools
+```
