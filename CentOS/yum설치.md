@@ -10,3 +10,9 @@ yum install tcpdump
 ```
 yum install net-tools
 ```
+
+### 시스템 업데이트
+    
+```
+yum -y update
+```
